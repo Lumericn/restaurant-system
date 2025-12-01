@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module models</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">models</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cuser%5Cdownloads%5Csertikom%5Cmodels.py">c:\users\user\downloads\sertikom\models.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="models.html#Customer">Customer</a>
+</dt><dt class="heading-text"><a href="models.html#Entity">Entity</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="models.html#Order">Order</a>
+</dt><dt class="heading-text"><a href="models.html#Reservation">Reservation</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="models.html#Menu">Menu</a>
+</dt><dt class="heading-text"><a href="models.html#Report">Report</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="models.html#DBReport">DBReport</a>
+</dt><dt class="heading-text"><a href="models.html#TextReport">TextReport</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Customer">class <strong>Customer</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Customer">Customer</a>(name,&nbsp;phone,&nbsp;people)<br>
+&nbsp;<br>
+Kelas&nbsp;<a href="#Customer">Customer</a>&nbsp;untuk&nbsp;menyimpan&nbsp;informasi&nbsp;pelanggan.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;Nama&nbsp;pelanggan.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;phone&nbsp;(str):&nbsp;Nomor&nbsp;HP&nbsp;pelanggan.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;people&nbsp;(int):&nbsp;Jumlah&nbsp;orang&nbsp;untuk&nbsp;reservasi.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Customer-__init__"><strong>__init__</strong></a>(self, name, phone, people)</dt><dd><span class="code">Inisialisasi&nbsp;<a href="#Customer">Customer</a>&nbsp;dengan&nbsp;nama,&nbsp;nomor&nbsp;HP,&nbsp;dan&nbsp;jumlah&nbsp;orang.</span></dd></dl>
+
+<dl><dt><a name="Customer-get_name"><strong>get_name</strong></a>(self)</dt><dd><span class="code">Mengembalikan&nbsp;nama&nbsp;pelanggan.</span></dd></dl>
+
+<dl><dt><a name="Customer-get_people"><strong>get_people</strong></a>(self)</dt><dd><span class="code">Mengembalikan&nbsp;jumlah&nbsp;orang&nbsp;untuk&nbsp;reservasi.</span></dd></dl>
+
+<dl><dt><a name="Customer-get_phone"><strong>get_phone</strong></a>(self)</dt><dd><span class="code">Mengembalikan&nbsp;nomor&nbsp;HP&nbsp;pelanggan.</span></dd></dl>
+
+<dl><dt><a name="Customer-set_phone"><strong>set_phone</strong></a>(self, new_phone)</dt><dd><span class="code">Mengubah&nbsp;nomor&nbsp;HP&nbsp;pelanggan.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="DBReport">class <strong>DBReport</strong></a>(<a href="models.html#Report">Report</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Laporan&nbsp;berbasis&nbsp;database.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#DBReport">DBReport</a></dd>
+<dd><a href="models.html#Report">Report</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="DBReport-print"><strong>print</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="models.html#Report">Report</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Entity">class <strong>Entity</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Entity">Entity</a>(customer:&nbsp;models.<a href="#Customer">Customer</a>)<br>
+&nbsp;<br>
+Kelas&nbsp;dasar&nbsp;untuk&nbsp;entitas&nbsp;yang&nbsp;berhubungan&nbsp;dengan&nbsp;<a href="#Customer">Customer</a>.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Entity-__init__"><strong>__init__</strong></a>(self, customer: models.Customer)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Menu">class <strong>Menu</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Menu">Menu</a>(menu_id,&nbsp;name,&nbsp;price)<br>
+&nbsp;<br>
+Kelas&nbsp;<a href="#Menu">Menu</a>&nbsp;untuk&nbsp;menyimpan&nbsp;data&nbsp;menu&nbsp;makanan/minuman.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;menu_id&nbsp;(int):&nbsp;ID&nbsp;menu.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;Nama&nbsp;menu.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;price&nbsp;(int):&nbsp;Harga&nbsp;menu.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Menu-__init__"><strong>__init__</strong></a>(self, menu_id, name, price)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Menu-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Representasi&nbsp;string&nbsp;dari&nbsp;menu&nbsp;untuk&nbsp;ditampilkan.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Order">class <strong>Order</strong></a>(<a href="models.html#Entity">Entity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Order">Order</a>(customer:&nbsp;models.<a href="#Customer">Customer</a>,&nbsp;items:&nbsp;list)<br>
+&nbsp;<br>
+Kelas&nbsp;<a href="#Order">Order</a>&nbsp;untuk&nbsp;menyimpan&nbsp;daftar&nbsp;pesanan&nbsp;menu.<br>
+Turunan&nbsp;dari&nbsp;<a href="#Entity">Entity</a>.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;customer&nbsp;(<a href="#Customer">Customer</a>):&nbsp;Objek&nbsp;pelanggan.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;items&nbsp;(list[<a href="#Menu">Menu</a>]):&nbsp;Daftar&nbsp;menu&nbsp;yang&nbsp;dipesan.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Order">Order</a></dd>
+<dd><a href="models.html#Entity">Entity</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Order-__init__"><strong>__init__</strong></a>(self, customer: models.Customer, items: list)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Order-print_receipt"><strong>print_receipt</strong></a>(self)</dt><dd><span class="code">Menampilkan&nbsp;struk&nbsp;pembayaran&nbsp;ke&nbsp;layar.</span></dd></dl>
+
+<dl><dt><a name="Order-total_price"><strong>total_price</strong></a>(self)</dt><dd><span class="code">Menghitung&nbsp;total&nbsp;harga&nbsp;semua&nbsp;menu&nbsp;yang&nbsp;dipesan.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="models.html#Entity">Entity</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Report">class <strong>Report</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Kelas&nbsp;dasar&nbsp;untuk&nbsp;laporan.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Report-print"><strong>print</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Reservation">class <strong>Reservation</strong></a>(<a href="models.html#Entity">Entity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Reservation">Reservation</a>(customer:&nbsp;models.<a href="#Customer">Customer</a>,&nbsp;table_number:&nbsp;int)<br>
+&nbsp;<br>
+Kelas&nbsp;<a href="#Reservation">Reservation</a>&nbsp;untuk&nbsp;menyimpan&nbsp;informasi&nbsp;reservasi&nbsp;meja.<br>
+Turunan&nbsp;dari&nbsp;<a href="#Entity">Entity</a>.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;customer&nbsp;(<a href="#Customer">Customer</a>):&nbsp;Objek&nbsp;pelanggan.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;table_number&nbsp;(int):&nbsp;Nomor&nbsp;meja&nbsp;yang&nbsp;dipesan.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Reservation">Reservation</a></dd>
+<dd><a href="models.html#Entity">Entity</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Reservation-__init__"><strong>__init__</strong></a>(self, customer: models.Customer, table_number: int)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="models.html#Entity">Entity</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="TextReport">class <strong>TextReport</strong></a>(<a href="models.html#Report">Report</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Laporan&nbsp;berbasis&nbsp;teks&nbsp;sederhana.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#TextReport">TextReport</a></dd>
+<dd><a href="models.html#Report">Report</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TextReport-print"><strong>print</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="models.html#Report">Report</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
