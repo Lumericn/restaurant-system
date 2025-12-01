@@ -17,3 +17,6 @@ Memilih menu, menghitung total harga, menyimpan pesanan ke database, dan menampi
 
 📊 **Lihat Laporan**  
 Menampilkan laporan reservasi dan pesanan, membantu manajemen restoran memantau aktivitas.
+
+🗑️ **Hapus Pesanan**
+Menghapus pesanan berdasarkan ID pesanan.
