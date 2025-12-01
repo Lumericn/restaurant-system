@@ -43,3 +43,5 @@ def lihat_laporan():
         import traceback
         print("Terjadi kesalahan saat mengambil laporan:", e)
         traceback.print_exc()
+    
+    print ("\n")
