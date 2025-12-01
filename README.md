@@ -16,4 +16,4 @@ Menyimpan data reservasi pelanggan ke database.
 Memilih menu, menghitung total harga, menyimpan pesanan ke database, dan menampilkan struk transaksi.  
 
 📊 **Lihat Laporan**  
-Menampilkan laporan reservasi dan pesanan, membantu manajemen restoran memantau aktivitas secara real-time.
+Menampilkan laporan reservasi dan pesanan, membantu manajemen restoran memantau aktivitas.
